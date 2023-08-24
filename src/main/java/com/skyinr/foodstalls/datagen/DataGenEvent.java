@@ -23,7 +23,7 @@ public class DataGenEvent {
         event.getGenerator().addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
 
 
-        event.getGenerator().addProvider(event.includeServer(), new ModAddFeaturesProvider(packOutput, existingFileHelper, FoodStalls.MODID, lookupProvider));
+//        event.getGenerator().addProvider(event.includeServer(), new ModAddFeaturesProvider(packOutput, existingFileHelper, FoodStalls.MODID, lookupProvider));
         event.getGenerator().addProvider(event.includeServer(), new ModLootTableProvider(packOutput));
         event.getGenerator().addProvider(event.includeServer(), new ModWorldGenProvider(packOutput, lookupProvider));
 

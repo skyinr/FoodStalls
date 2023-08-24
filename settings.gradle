@@ -5,4 +5,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'meme'
+rootProject.name = 'food_stalls'

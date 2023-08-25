@@ -64,13 +64,10 @@ jobs:
         with:
           gradle-version: 7.5.1
 
-      - name: Setup Permissions
-        run: chmod +x gradlew
-
       - name: Cache
         uses: actions/cache@v3
         with:
-          path: build/**/*
+          path: build/tmp/**/*
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: |
             ${{ runner.os }}-gradle-

@@ -78,5 +78,5 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: FoodStalls-${{ github.event.pull_request.base.ref }}-${{ github.sha }}
+          name: FoodStalls-${{ github.event.pull_request.base.ref }}-${{ github.run_number }}
           path: build/libs/*.jar

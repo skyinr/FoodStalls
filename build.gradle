@@ -4,9 +4,9 @@ plugins {
 
 
 group = 'skyinr'
-//{x-version-start:<artifact-name>:<released>}
+// x-release-please-start-version
 version = '1.0.0'
-//{x-version-end}
+// x-release-please-end
 
 java {
     archivesBaseName = 'food_stalls'

@@ -1,5 +1,6 @@
 {
   "release-type": "java",
+  "skip-github-pull-request": true,
   "include-component-in-tag": false,
   "packages": {
     ".": {

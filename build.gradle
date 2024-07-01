@@ -1,10 +1,12 @@
 plugins {
-    id 'net.minecraftforge.gradle' version '5.1.+'
+    id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
 }
 
 
 group = 'skyinr'
+//{x-version-start:<artifact-name>:<released>}
 version = '1.0-SNAPSHOT'
+//{x-version-end}
 
 java {
     archivesBaseName = 'food_stalls'

@@ -41,5 +41,3 @@ jobs:
       - name: Upload Mod
         if: ${{ !cancelled() }}
         uses: googleapis/release-please-action@v4
-        with:
-          ref: master

@@ -12,12 +12,13 @@ on:
     branches:
       - master
 
+permissions:
+    contents: write
+    packages: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      packages: write
 
     steps:
       - uses: actions/checkout@v3

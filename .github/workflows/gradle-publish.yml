@@ -40,6 +40,15 @@ jobs:
         run: |
           gradle runGameTestServer
 
-      - name: Upload Mod
-        if: ${{ !cancelled() }}
+      - name: Upload Mod Release
         uses: googleapis/release-please-action@v4
+
+      - name: Build Mod
+        if: ${{ steps.release.outputs.release_created }}
+        run: |
+          gradle build
+
+      - name: Upload Mod
+        if: ${{ steps.release.outputs.release_created }}
+        run: |
+          gh release upload ${{ steps.release.outputs.tag_name }} ./build/libs/food_stalls-${{ steps.release.outputs.tag_name }}.jar

@@ -39,6 +39,7 @@ jobs:
           gradle runGameTestServer
 
       - name: Upload Mod
+        if: ${{ !cancelled() }}
         uses: googleapis/release-please-action@v4
         with:
           release-type: java

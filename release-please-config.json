@@ -2,7 +2,7 @@
   "release-type": "java",
   "include-component-in-tag": false,
   "packages": {
-    "./": {
+    ".": {
       "extra-files": [
         "build.gradle"
       ]
